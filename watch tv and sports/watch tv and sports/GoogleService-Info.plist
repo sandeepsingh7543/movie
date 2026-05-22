@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyA0NVqvht5V9Cj151im4y785QpjZHcTLhU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>616355378554</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.m.watchtvsports</string>
+	<key>PROJECT_ID</key>
+	<string>watch-tv-sports</string>
+	<key>STORAGE_BUCKET</key>
+	<string>watch-tv-sports.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:616355378554:ios:3fc04ce8263e62a5bd12c3</string>
+</dict>
+</plist>
