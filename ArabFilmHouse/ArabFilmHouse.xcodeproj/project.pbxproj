@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068D34705F36BDBC3DD0A05F /* Pods_ArabFilmHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F901CD4C9E9737C88FFBCF1C /* Pods_ArabFilmHouse.framework */; };
+		D50FD4E72F31E8C4009D4B51 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D50FD4E62F31E8C4009D4B51 /* FirebaseAnalytics */; };
+		D50FD4E92F31E8C4009D4B51 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = D50FD4E82F31E8C4009D4B51 /* FirebaseRemoteConfig */; };
+		D50FD4EC2F31E8DC009D4B51 /* AdjustSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D50FD4EB2F31E8DC009D4B51 /* AdjustSdk */; };
+		D50FD4EE2F31E8DC009D4B51 /* AdjustWebBridge in Frameworks */ = {isa = PBXBuildFile; productRef = D50FD4ED2F31E8DC009D4B51 /* AdjustWebBridge */; };
+		D50FD4F12F31E8FE009D4B51 /* FingerprintPro in Frameworks */ = {isa = PBXBuildFile; productRef = D50FD4F02F31E8FE009D4B51 /* FingerprintPro */; };
+		D50FD5582F31E99C009D4B51 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5422F31E99C009D4B51 /* Movie.swift */; };
+		D50FD5592F31E99C009D4B51 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5462F31E99C009D4B51 /* AddMovieView.swift */; };
+		D50FD55A2F31E99C009D4B51 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5472F31E99C009D4B51 /* DiscoverView.swift */; };
+		D50FD55B2F31E99C009D4B51 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5482F31E99C009D4B51 /* HomeView.swift */; };
+		D50FD55C2F31E99C009D4B51 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5492F31E99C009D4B51 /* LaunchScreenView.swift */; };
+		D50FD55D2F31E99C009D4B51 /* LegalViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD54A2F31E99C009D4B51 /* LegalViews.swift */; };
+		D50FD55E2F31E99C009D4B51 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD54B2F31E99C009D4B51 /* MovieDetailView.swift */; };
+		D50FD55F2F31E99C009D4B51 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD54C2F31E99C009D4B51 /* ProfileView.swift */; };
+		D50FD5602F31E99C009D4B51 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD54D2F31E99C009D4B51 /* WatchlistView.swift */; };
+		D50FD5612F31E99C009D4B51 /* A0.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD54F2F31E99C009D4B51 /* A0.swift */; };
+		D50FD5622F31E99C009D4B51 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5502F31E99C009D4B51 /* AdManager.swift */; };
+		D50FD5632F31E99C009D4B51 /* ArabFilmHouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5512F31E99C009D4B51 /* ArabFilmHouseApp.swift */; };
+		D50FD5642F31E99C009D4B51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5532F31E99C009D4B51 /* ContentView.swift */; };
+		D50FD5652F31E99C009D4B51 /* K1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5542F31E99C009D4B51 /* K1.swift */; };
+		D50FD5662F31E99C009D4B51 /* M1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5552F31E99C009D4B51 /* M1.swift */; };
+		D50FD5672F31E99C009D4B51 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FD5562F31E99C009D4B51 /* UnityManager.swift */; };
+		D50FD5682F31E99C009D4B51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50FD5442F31E99C009D4B51 /* Preview Assets.xcassets */; };
+		D50FD5692F31E99C009D4B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50FD5522F31E99C009D4B51 /* Assets.xcassets */; };
+		D536A0352F31FF23002CA31B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D536A0342F31FF23002CA31B /* GoogleService-Info.plist */; };
+		D54D9C432F3B138700B71C72 /* RemoteConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D9C422F3B138700B71C72 /* RemoteConfigurationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E56F9E11EB990980A87C3E5 /* Pods-ArabFilmHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArabFilmHouse.debug.xcconfig"; path = "Target Support Files/Pods-ArabFilmHouse/Pods-ArabFilmHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		B815CC8867AF74A541BB61E3 /* Pods-ArabFilmHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArabFilmHouse.release.xcconfig"; path = "Target Support Files/Pods-ArabFilmHouse/Pods-ArabFilmHouse.release.xcconfig"; sourceTree = "<group>"; };
+		D50FD5422F31E99C009D4B51 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D50FD5442F31E99C009D4B51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D50FD5462F31E99C009D4B51 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
+		D50FD5472F31E99C009D4B51 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		D50FD5482F31E99C009D4B51 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D50FD5492F31E99C009D4B51 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		D50FD54A2F31E99C009D4B51 /* LegalViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViews.swift; sourceTree = "<group>"; };
+		D50FD54B2F31E99C009D4B51 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		D50FD54C2F31E99C009D4B51 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D50FD54D2F31E99C009D4B51 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		D50FD54F2F31E99C009D4B51 /* A0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A0.swift; sourceTree = "<group>"; };
+		D50FD5502F31E99C009D4B51 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		D50FD5512F31E99C009D4B51 /* ArabFilmHouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabFilmHouseApp.swift; sourceTree = "<group>"; };
+		D50FD5522F31E99C009D4B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D50FD5532F31E99C009D4B51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D50FD5542F31E99C009D4B51 /* K1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K1.swift; sourceTree = "<group>"; };
+		D50FD5552F31E99C009D4B51 /* M1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M1.swift; sourceTree = "<group>"; };
+		D50FD5562F31E99C009D4B51 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
+		D536A0062F31F29B002CA31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D536A0342F31FF23002CA31B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D54D9C422F3B138700B71C72 /* RemoteConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigurationManager.swift; sourceTree = "<group>"; };
+		D5A113A62F30CD6B00F8AE9A /* ArabFilmHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabFilmHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F901CD4C9E9737C88FFBCF1C /* Pods_ArabFilmHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArabFilmHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5A113A32F30CD6B00F8AE9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50FD4EC2F31E8DC009D4B51 /* AdjustSdk in Frameworks */,
+				D50FD4EE2F31E8DC009D4B51 /* AdjustWebBridge in Frameworks */,
+				D50FD4F12F31E8FE009D4B51 /* FingerprintPro in Frameworks */,
+				D50FD4E72F31E8C4009D4B51 /* FirebaseAnalytics in Frameworks */,
+				D50FD4E92F31E8C4009D4B51 /* FirebaseRemoteConfig in Frameworks */,
+				068D34705F36BDBC3DD0A05F /* Pods_ArabFilmHouse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F706BAC084E2A67ADA4A398 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E56F9E11EB990980A87C3E5 /* Pods-ArabFilmHouse.debug.xcconfig */,
+				B815CC8867AF74A541BB61E3 /* Pods-ArabFilmHouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D50FD5432F31E99C009D4B51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D50FD5422F31E99C009D4B51 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D50FD5452F31E99C009D4B51 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D50FD5442F31E99C009D4B51 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D50FD54E2F31E99C009D4B51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D50FD5462F31E99C009D4B51 /* AddMovieView.swift */,
+				D50FD5472F31E99C009D4B51 /* DiscoverView.swift */,
+				D50FD5482F31E99C009D4B51 /* HomeView.swift */,
+				D50FD5492F31E99C009D4B51 /* LaunchScreenView.swift */,
+				D50FD54A2F31E99C009D4B51 /* LegalViews.swift */,
+				D50FD54B2F31E99C009D4B51 /* MovieDetailView.swift */,
+				D50FD54C2F31E99C009D4B51 /* ProfileView.swift */,
+				D50FD54D2F31E99C009D4B51 /* WatchlistView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D50FD5572F31E99C009D4B51 /* ArabFilmHouse */ = {
+			isa = PBXGroup;
+			children = (
+				D536A0062F31F29B002CA31B /* Info.plist */,
+				D536A0342F31FF23002CA31B /* GoogleService-Info.plist */,
+				D50FD5432F31E99C009D4B51 /* Models */,
+				D50FD5452F31E99C009D4B51 /* Preview Content */,
+				D50FD54E2F31E99C009D4B51 /* Views */,
+				D50FD54F2F31E99C009D4B51 /* A0.swift */,
+				D50FD5502F31E99C009D4B51 /* AdManager.swift */,
+				D50FD5512F31E99C009D4B51 /* ArabFilmHouseApp.swift */,
+				D50FD5522F31E99C009D4B51 /* Assets.xcassets */,
+				D50FD5532F31E99C009D4B51 /* ContentView.swift */,
+				D50FD5542F31E99C009D4B51 /* K1.swift */,
+				D50FD5552F31E99C009D4B51 /* M1.swift */,
+				D54D9C422F3B138700B71C72 /* RemoteConfigurationManager.swift */,
+				D50FD5562F31E99C009D4B51 /* UnityManager.swift */,
+			);
+			path = ArabFilmHouse;
+			sourceTree = "<group>";
+		};
+		D5A1139D2F30CD6B00F8AE9A = {
+			isa = PBXGroup;
+			children = (
+				D50FD5572F31E99C009D4B51 /* ArabFilmHouse */,
+				D5A113A72F30CD6B00F8AE9A /* Products */,
+				4F706BAC084E2A67ADA4A398 /* Pods */,
+				E630D7DF636E214D010A63C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5A113A72F30CD6B00F8AE9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5A113A62F30CD6B00F8AE9A /* ArabFilmHouse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E630D7DF636E214D010A63C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F901CD4C9E9737C88FFBCF1C /* Pods_ArabFilmHouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5A113A52F30CD6B00F8AE9A /* ArabFilmHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A113B42F30CD6D00F8AE9A /* Build configuration list for PBXNativeTarget "ArabFilmHouse" */;
+			buildPhases = (
+				756445D7797825BBE244EE1D /* [CP] Check Pods Manifest.lock */,
+				D5A113A22F30CD6B00F8AE9A /* Sources */,
+				D5A113A32F30CD6B00F8AE9A /* Frameworks */,
+				D5A113A42F30CD6B00F8AE9A /* Resources */,
+				770A3EFD6B223186481B27D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArabFilmHouse;
+			packageProductDependencies = (
+				D50FD4E62F31E8C4009D4B51 /* FirebaseAnalytics */,
+				D50FD4E82F31E8C4009D4B51 /* FirebaseRemoteConfig */,
+				D50FD4EB2F31E8DC009D4B51 /* AdjustSdk */,
+				D50FD4ED2F31E8DC009D4B51 /* AdjustWebBridge */,
+				D50FD4F02F31E8FE009D4B51 /* FingerprintPro */,
+			);
+			productName = ArabFilmHouse;
+			productReference = D5A113A62F30CD6B00F8AE9A /* ArabFilmHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5A1139E2F30CD6B00F8AE9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D5A113A52F30CD6B00F8AE9A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = D5A113A12F30CD6B00F8AE9A /* Build configuration list for PBXProject "ArabFilmHouse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5A1139D2F30CD6B00F8AE9A;
+			packageReferences = (
+				D50FD4E52F31E8C4009D4B51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D50FD4EA2F31E8DC009D4B51 /* XCRemoteSwiftPackageReference "ios_sdk" */,
+				D50FD4EF2F31E8FE009D4B51 /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */,
+			);
+			productRefGroup = D5A113A72F30CD6B00F8AE9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5A113A52F30CD6B00F8AE9A /* ArabFilmHouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5A113A42F30CD6B00F8AE9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50FD5682F31E99C009D4B51 /* Preview Assets.xcassets in Resources */,
+				D50FD5692F31E99C009D4B51 /* Assets.xcassets in Resources */,
+				D536A0352F31FF23002CA31B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		756445D7797825BBE244EE1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArabFilmHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770A3EFD6B223186481B27D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArabFilmHouse/Pods-ArabFilmHouse-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArabFilmHouse/Pods-ArabFilmHouse-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArabFilmHouse/Pods-ArabFilmHouse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5A113A22F30CD6B00F8AE9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50FD5582F31E99C009D4B51 /* Movie.swift in Sources */,
+				D50FD5592F31E99C009D4B51 /* AddMovieView.swift in Sources */,
+				D50FD55A2F31E99C009D4B51 /* DiscoverView.swift in Sources */,
+				D50FD55B2F31E99C009D4B51 /* HomeView.swift in Sources */,
+				D54D9C432F3B138700B71C72 /* RemoteConfigurationManager.swift in Sources */,
+				D50FD55C2F31E99C009D4B51 /* LaunchScreenView.swift in Sources */,
+				D50FD55D2F31E99C009D4B51 /* LegalViews.swift in Sources */,
+				D50FD55E2F31E99C009D4B51 /* MovieDetailView.swift in Sources */,
+				D50FD55F2F31E99C009D4B51 /* ProfileView.swift in Sources */,
+				D50FD5602F31E99C009D4B51 /* WatchlistView.swift in Sources */,
+				D50FD5612F31E99C009D4B51 /* A0.swift in Sources */,
+				D50FD5622F31E99C009D4B51 /* AdManager.swift in Sources */,
+				D50FD5632F31E99C009D4B51 /* ArabFilmHouseApp.swift in Sources */,
+				D50FD5642F31E99C009D4B51 /* ContentView.swift in Sources */,
+				D50FD5652F31E99C009D4B51 /* K1.swift in Sources */,
+				D50FD5662F31E99C009D4B51 /* M1.swift in Sources */,
+				D50FD5672F31E99C009D4B51 /* UnityManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D5A113B22F30CD6D00F8AE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5A113B32F30CD6D00F8AE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5A113B52F30CD6D00F8AE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E56F9E11EB990980A87C3E5 /* Pods-ArabFilmHouse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"ArabFilmHouse/Preview Content\"";
+				DEVELOPMENT_TEAM = DJM47H9BMS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArabFilmHouse/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to provide better and more relevant ads. Please allow tracking for a personalized ad experience.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.har.arabfilmhouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D5A113B62F30CD6D00F8AE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B815CC8867AF74A541BB61E3 /* Pods-ArabFilmHouse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"ArabFilmHouse/Preview Content\"";
+				DEVELOPMENT_TEAM = DJM47H9BMS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArabFilmHouse/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to provide better and more relevant ads. Please allow tracking for a personalized ad experience.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.har.arabfilmhouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5A113A12F30CD6B00F8AE9A /* Build configuration list for PBXProject "ArabFilmHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A113B22F30CD6D00F8AE9A /* Debug */,
+				D5A113B32F30CD6D00F8AE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A113B42F30CD6D00F8AE9A /* Build configuration list for PBXNativeTarget "ArabFilmHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A113B52F30CD6D00F8AE9A /* Debug */,
+				D5A113B62F30CD6D00F8AE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D50FD4E52F31E8C4009D4B51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		D50FD4EA2F31E8DC009D4B51 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D50FD4EF2F31E8FE009D4B51 /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fingerprintjs/fingerprintjs-pro-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D50FD4E62F31E8C4009D4B51 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50FD4E52F31E8C4009D4B51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D50FD4E82F31E8C4009D4B51 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50FD4E52F31E8C4009D4B51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		D50FD4EB2F31E8DC009D4B51 /* AdjustSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50FD4EA2F31E8DC009D4B51 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustSdk;
+		};
+		D50FD4ED2F31E8DC009D4B51 /* AdjustWebBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50FD4EA2F31E8DC009D4B51 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustWebBridge;
+		};
+		D50FD4F02F31E8FE009D4B51 /* FingerprintPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50FD4EF2F31E8FE009D4B51 /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */;
+			productName = FingerprintPro;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D5A1139E2F30CD6B00F8AE9A /* Project object */;
+}
