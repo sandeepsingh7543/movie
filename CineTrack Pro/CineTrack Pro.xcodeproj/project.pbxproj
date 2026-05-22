@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A76903E05AD62F21BF7D3A8 /* Pods_CineTrack_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB229832067656C8D8DD9F65 /* Pods_CineTrack_Pro.framework */; };
+		D52308B32F7E3CA800E564F7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308992F7E3CA800E564F7 /* Movie.swift */; };
+		D52308B42F7E3CA800E564F7 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523089D2F7E3CA800E564F7 /* MovieViewModel.swift */; };
+		D52308B52F7E3CA800E564F7 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523089F2F7E3CA800E564F7 /* AddMovieView.swift */; };
+		D52308B62F7E3CA800E564F7 /* EditMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A02F7E3CA800E564F7 /* EditMovieView.swift */; };
+		D52308B72F7E3CA800E564F7 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A12F7E3CA800E564F7 /* FilterView.swift */; };
+		D52308B82F7E3CA800E564F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A22F7E3CA800E564F7 /* HomeView.swift */; };
+		D52308B92F7E3CA800E564F7 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A32F7E3CA800E564F7 /* LibraryView.swift */; };
+		D52308BA2F7E3CA800E564F7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A42F7E3CA800E564F7 /* MainTabView.swift */; };
+		D52308BB2F7E3CA800E564F7 /* MoodMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A52F7E3CA800E564F7 /* MoodMoviesView.swift */; };
+		D52308BC2F7E3CA800E564F7 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A62F7E3CA800E564F7 /* MovieDetailView.swift */; };
+		D52308BD2F7E3CA800E564F7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A72F7E3CA800E564F7 /* SettingsView.swift */; };
+		D52308BE2F7E3CA800E564F7 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308A92F7E3CA800E564F7 /* AdManager.swift */; };
+		D52308BF2F7E3CA800E564F7 /* CineTrack_ProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308AB2F7E3CA800E564F7 /* CineTrack_ProApp.swift */; };
+		D52308C02F7E3CA800E564F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308AC2F7E3CA800E564F7 /* ContentView.swift */; };
+		D52308C12F7E3CA800E564F7 /* Q2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308AD2F7E3CA800E564F7 /* Q2.swift */; };
+		D52308C22F7E3CA800E564F7 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308AE2F7E3CA800E564F7 /* UnityManager.swift */; };
+		D52308C32F7E3CA800E564F7 /* X7.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308AF2F7E3CA800E564F7 /* X7.swift */; };
+		D52308C42F7E3CA800E564F7 /* Y3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308B02F7E3CA800E564F7 /* Y3.swift */; };
+		D52308C52F7E3CA800E564F7 /* Z9.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52308B12F7E3CA800E564F7 /* Z9.swift */; };
+		D52308C62F7E3CA800E564F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D523089B2F7E3CA800E564F7 /* Preview Assets.xcassets */; };
+		D52308C72F7E3CA800E564F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52308AA2F7E3CA800E564F7 /* Assets.xcassets */; };
+		D52308CA2F7E3DA100E564F7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D52308C92F7E3DA100E564F7 /* FirebaseAnalytics */; };
+		D52308CC2F7E3DA100E564F7 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = D52308CB2F7E3DA100E564F7 /* FirebaseRemoteConfig */; };
+		D52308CF2F7E3DB900E564F7 /* AdjustSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D52308CE2F7E3DB900E564F7 /* AdjustSdk */; };
+		D52308D12F7E3DB900E564F7 /* AdjustWebBridge in Frameworks */ = {isa = PBXBuildFile; productRef = D52308D02F7E3DB900E564F7 /* AdjustWebBridge */; };
+		D52308D42F7E3DC700E564F7 /* FingerprintPro in Frameworks */ = {isa = PBXBuildFile; productRef = D52308D32F7E3DC700E564F7 /* FingerprintPro */; };
+		D52308D72F7E412C00E564F7 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52308D62F7E412C00E564F7 /* AppTrackingTransparency.framework */; };
+		D52308D92F7E413B00E564F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52308D82F7E413B00E564F7 /* StoreKit.framework */; };
+		D52308DC2F7E414300E564F7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52308DA2F7E414300E564F7 /* AdSupport.framework */; };
+		D52308DD2F7E414300E564F7 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52308DB2F7E414300E564F7 /* AdServices.framework */; };
+		D52308DF2F7E425700E564F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D52308DE2F7E425700E564F7 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BEA976B5656128D32865C82 /* Pods-CineTrack Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineTrack Pro.debug.xcconfig"; path = "Target Support Files/Pods-CineTrack Pro/Pods-CineTrack Pro.debug.xcconfig"; sourceTree = "<group>"; };
+		D52308992F7E3CA800E564F7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D523089B2F7E3CA800E564F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D523089D2F7E3CA800E564F7 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		D523089F2F7E3CA800E564F7 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
+		D52308A02F7E3CA800E564F7 /* EditMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMovieView.swift; sourceTree = "<group>"; };
+		D52308A12F7E3CA800E564F7 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		D52308A22F7E3CA800E564F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D52308A32F7E3CA800E564F7 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		D52308A42F7E3CA800E564F7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D52308A52F7E3CA800E564F7 /* MoodMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMoviesView.swift; sourceTree = "<group>"; };
+		D52308A62F7E3CA800E564F7 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		D52308A72F7E3CA800E564F7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D52308A92F7E3CA800E564F7 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		D52308AA2F7E3CA800E564F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D52308AB2F7E3CA800E564F7 /* CineTrack_ProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineTrack_ProApp.swift; sourceTree = "<group>"; };
+		D52308AC2F7E3CA800E564F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D52308AD2F7E3CA800E564F7 /* Q2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2.swift; sourceTree = "<group>"; };
+		D52308AE2F7E3CA800E564F7 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
+		D52308AF2F7E3CA800E564F7 /* X7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X7.swift; sourceTree = "<group>"; };
+		D52308B02F7E3CA800E564F7 /* Y3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3.swift; sourceTree = "<group>"; };
+		D52308B12F7E3CA800E564F7 /* Z9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z9.swift; sourceTree = "<group>"; };
+		D52308D52F7E403F00E564F7 /* CineTrack-Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CineTrack-Pro-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D52308D62F7E412C00E564F7 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		D52308D82F7E413B00E564F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D52308DA2F7E414300E564F7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D52308DB2F7E414300E564F7 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		D52308DE2F7E425700E564F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5D067CE2F7C4881001D8D38 /* CineTrack Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CineTrack Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A50DDB958CA9A306D56564 /* Pods-CineTrack Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineTrack Pro.release.xcconfig"; path = "Target Support Files/Pods-CineTrack Pro/Pods-CineTrack Pro.release.xcconfig"; sourceTree = "<group>"; };
+		FB229832067656C8D8DD9F65 /* Pods_CineTrack_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineTrack_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5D067CB2F7C4881001D8D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52308CC2F7E3DA100E564F7 /* FirebaseRemoteConfig in Frameworks */,
+				D52308D42F7E3DC700E564F7 /* FingerprintPro in Frameworks */,
+				D52308DC2F7E414300E564F7 /* AdSupport.framework in Frameworks */,
+				D52308CA2F7E3DA100E564F7 /* FirebaseAnalytics in Frameworks */,
+				D52308D92F7E413B00E564F7 /* StoreKit.framework in Frameworks */,
+				D52308DD2F7E414300E564F7 /* AdServices.framework in Frameworks */,
+				D52308CF2F7E3DB900E564F7 /* AdjustSdk in Frameworks */,
+				D52308D12F7E3DB900E564F7 /* AdjustWebBridge in Frameworks */,
+				D52308D72F7E412C00E564F7 /* AppTrackingTransparency.framework in Frameworks */,
+				1A76903E05AD62F21BF7D3A8 /* Pods_CineTrack_Pro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DAC29DE178990DF0E5DF58C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52308DB2F7E414300E564F7 /* AdServices.framework */,
+				D52308DA2F7E414300E564F7 /* AdSupport.framework */,
+				D52308D82F7E413B00E564F7 /* StoreKit.framework */,
+				D52308D62F7E412C00E564F7 /* AppTrackingTransparency.framework */,
+				FB229832067656C8D8DD9F65 /* Pods_CineTrack_Pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		875B8DDA8097F9855D62689E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BEA976B5656128D32865C82 /* Pods-CineTrack Pro.debug.xcconfig */,
+				D6A50DDB958CA9A306D56564 /* Pods-CineTrack Pro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D523089A2F7E3CA800E564F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D52308992F7E3CA800E564F7 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D523089C2F7E3CA800E564F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D523089B2F7E3CA800E564F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D523089E2F7E3CA800E564F7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D523089D2F7E3CA800E564F7 /* MovieViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D52308A82F7E3CA800E564F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D523089F2F7E3CA800E564F7 /* AddMovieView.swift */,
+				D52308A02F7E3CA800E564F7 /* EditMovieView.swift */,
+				D52308A12F7E3CA800E564F7 /* FilterView.swift */,
+				D52308A22F7E3CA800E564F7 /* HomeView.swift */,
+				D52308A32F7E3CA800E564F7 /* LibraryView.swift */,
+				D52308A42F7E3CA800E564F7 /* MainTabView.swift */,
+				D52308A52F7E3CA800E564F7 /* MoodMoviesView.swift */,
+				D52308A62F7E3CA800E564F7 /* MovieDetailView.swift */,
+				D52308A72F7E3CA800E564F7 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D52308B22F7E3CA800E564F7 /* CineTrack Pro */ = {
+			isa = PBXGroup;
+			children = (
+				D52308D52F7E403F00E564F7 /* CineTrack-Pro-Info.plist */,
+				D52308DE2F7E425700E564F7 /* GoogleService-Info.plist */,
+				D523089A2F7E3CA800E564F7 /* Models */,
+				D523089C2F7E3CA800E564F7 /* Preview Content */,
+				D523089E2F7E3CA800E564F7 /* ViewModels */,
+				D52308A82F7E3CA800E564F7 /* Views */,
+				D52308A92F7E3CA800E564F7 /* AdManager.swift */,
+				D52308AA2F7E3CA800E564F7 /* Assets.xcassets */,
+				D52308AB2F7E3CA800E564F7 /* CineTrack_ProApp.swift */,
+				D52308AC2F7E3CA800E564F7 /* ContentView.swift */,
+				D52308AD2F7E3CA800E564F7 /* Q2.swift */,
+				D52308AE2F7E3CA800E564F7 /* UnityManager.swift */,
+				D52308AF2F7E3CA800E564F7 /* X7.swift */,
+				D52308B02F7E3CA800E564F7 /* Y3.swift */,
+				D52308B12F7E3CA800E564F7 /* Z9.swift */,
+			);
+			path = "CineTrack Pro";
+			sourceTree = "<group>";
+		};
+		D5D067C52F7C4881001D8D38 = {
+			isa = PBXGroup;
+			children = (
+				D52308B22F7E3CA800E564F7 /* CineTrack Pro */,
+				D5D067CF2F7C4881001D8D38 /* Products */,
+				875B8DDA8097F9855D62689E /* Pods */,
+				7DAC29DE178990DF0E5DF58C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5D067CF2F7C4881001D8D38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5D067CE2F7C4881001D8D38 /* CineTrack Pro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5D067CD2F7C4881001D8D38 /* CineTrack Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D067DC2F7C4883001D8D38 /* Build configuration list for PBXNativeTarget "CineTrack Pro" */;
+			buildPhases = (
+				C656ECC3686EFB321017EE1F /* [CP] Check Pods Manifest.lock */,
+				D5D067CA2F7C4881001D8D38 /* Sources */,
+				D5D067CB2F7C4881001D8D38 /* Frameworks */,
+				D5D067CC2F7C4881001D8D38 /* Resources */,
+				7F8E9C5C7E78E9BAA3EED673 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CineTrack Pro";
+			productName = "CineTrack Pro";
+			productReference = D5D067CE2F7C4881001D8D38 /* CineTrack Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5D067C62F7C4881001D8D38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D5D067CD2F7C4881001D8D38 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = D5D067C92F7C4881001D8D38 /* Build configuration list for PBXProject "CineTrack Pro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5D067C52F7C4881001D8D38;
+			packageReferences = (
+				D52308C82F7E3DA000E564F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D52308CD2F7E3DB900E564F7 /* XCRemoteSwiftPackageReference "ios_sdk" */,
+				D52308D22F7E3DC700E564F7 /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */,
+			);
+			productRefGroup = D5D067CF2F7C4881001D8D38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5D067CD2F7C4881001D8D38 /* CineTrack Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5D067CC2F7C4881001D8D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52308C62F7E3CA800E564F7 /* Preview Assets.xcassets in Resources */,
+				D52308C72F7E3CA800E564F7 /* Assets.xcassets in Resources */,
+				D52308DF2F7E425700E564F7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F8E9C5C7E78E9BAA3EED673 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CineTrack Pro/Pods-CineTrack Pro-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CineTrack Pro/Pods-CineTrack Pro-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CineTrack Pro/Pods-CineTrack Pro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C656ECC3686EFB321017EE1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CineTrack Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5D067CA2F7C4881001D8D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52308B32F7E3CA800E564F7 /* Movie.swift in Sources */,
+				D52308B42F7E3CA800E564F7 /* MovieViewModel.swift in Sources */,
+				D52308B52F7E3CA800E564F7 /* AddMovieView.swift in Sources */,
+				D52308B62F7E3CA800E564F7 /* EditMovieView.swift in Sources */,
+				D52308B72F7E3CA800E564F7 /* FilterView.swift in Sources */,
+				D52308B82F7E3CA800E564F7 /* HomeView.swift in Sources */,
+				D52308B92F7E3CA800E564F7 /* LibraryView.swift in Sources */,
+				D52308BA2F7E3CA800E564F7 /* MainTabView.swift in Sources */,
+				D52308BB2F7E3CA800E564F7 /* MoodMoviesView.swift in Sources */,
+				D52308BC2F7E3CA800E564F7 /* MovieDetailView.swift in Sources */,
+				D52308BD2F7E3CA800E564F7 /* SettingsView.swift in Sources */,
+				D52308BE2F7E3CA800E564F7 /* AdManager.swift in Sources */,
+				D52308BF2F7E3CA800E564F7 /* CineTrack_ProApp.swift in Sources */,
+				D52308C02F7E3CA800E564F7 /* ContentView.swift in Sources */,
+				D52308C12F7E3CA800E564F7 /* Q2.swift in Sources */,
+				D52308C22F7E3CA800E564F7 /* UnityManager.swift in Sources */,
+				D52308C32F7E3CA800E564F7 /* X7.swift in Sources */,
+				D52308C42F7E3CA800E564F7 /* Y3.swift in Sources */,
+				D52308C52F7E3CA800E564F7 /* Z9.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D5D067DA2F7C4883001D8D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_LITERAL_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5D067DB2F7C4883001D8D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5D067DD2F7C4883001D8D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEA976B5656128D32865C82 /* Pods-CineTrack Pro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CineTrack Pro/Preview Content\"";
+				DEVELOPMENT_TEAM = 93XL69U5T3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CineTrack-Pro-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MoViTV World";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your information to display relevant and better ads, enhancing your experience with more personalized content.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h.cinetrackpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D5D067DE2F7C4883001D8D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A50DDB958CA9A306D56564 /* Pods-CineTrack Pro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CineTrack Pro/Preview Content\"";
+				DEVELOPMENT_TEAM = 93XL69U5T3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CineTrack-Pro-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MoViTV World";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your information to display relevant and better ads, enhancing your experience with more personalized content.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h.cinetrackpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5D067C92F7C4881001D8D38 /* Build configuration list for PBXProject "CineTrack Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D067DA2F7C4883001D8D38 /* Debug */,
+				D5D067DB2F7C4883001D8D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5D067DC2F7C4883001D8D38 /* Build configuration list for PBXNativeTarget "CineTrack Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D067DD2F7C4883001D8D38 /* Debug */,
+				D5D067DE2F7C4883001D8D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D52308C82F7E3DA000E564F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+		D52308CD2F7E3DB900E564F7 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D52308D22F7E3DC700E564F7 /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fingerprintjs/fingerprintjs-pro-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D52308C92F7E3DA100E564F7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52308C82F7E3DA000E564F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D52308CB2F7E3DA100E564F7 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52308C82F7E3DA000E564F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		D52308CE2F7E3DB900E564F7 /* AdjustSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52308CD2F7E3DB900E564F7 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustSdk;
+		};
+		D52308D02F7E3DB900E564F7 /* AdjustWebBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52308CD2F7E3DB900E564F7 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustWebBridge;
+		};
+		D52308D32F7E3DC700E564F7 /* FingerprintPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52308D22F7E3DC700E564F7 /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */;
+			productName = FingerprintPro;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D5D067C62F7C4881001D8D38 /* Project object */;
+}
