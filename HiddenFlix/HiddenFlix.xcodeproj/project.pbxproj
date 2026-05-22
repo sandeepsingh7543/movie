@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06FEA5FCDC556F00966A41C6 /* Pods_HiddenFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E21DC82DDB2524DA806529 /* Pods_HiddenFlix.framework */; };
+		D58A86922E983DC0009A39D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D58A86912E983DC0009A39D4 /* GoogleService-Info.plist */; };
+		D58D45EF2E97E4F100484E3F /* FingerprintPro in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45EE2E97E4F100484E3F /* FingerprintPro */; };
+		D58D45F22E97E51400484E3F /* AdjustGoogleOdm in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45F12E97E51400484E3F /* AdjustGoogleOdm */; };
+		D58D45F42E97E51400484E3F /* AdjustSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45F32E97E51400484E3F /* AdjustSdk */; };
+		D58D45F62E97E51400484E3F /* AdjustWebBridge in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45F52E97E51400484E3F /* AdjustWebBridge */; };
+		D58D45F92E97E53B00484E3F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45F82E97E53B00484E3F /* FirebaseAnalytics */; };
+		D58D45FB2E97E53B00484E3F /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45FA2E97E53B00484E3F /* FirebaseAnalyticsCore */; };
+		D58D45FD2E97E53B00484E3F /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = D58D45FC2E97E53B00484E3F /* FirebaseRemoteConfig */; };
+		D58D468E2E97E5B500484E3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58D466B2E97E5B500484E3F /* Preview Assets.xcassets */; };
+		D58D468F2E97E5B500484E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58D46842E97E5B500484E3F /* Assets.xcassets */; };
+		D58D46912E97E5B500484E3F /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46672E97E5B500484E3F /* Anime.swift */; };
+		D58D46922E97E5B500484E3F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46682E97E5B500484E3F /* Movie.swift */; };
+		D58D46932E97E5B500484E3F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46692E97E5B500484E3F /* PersistenceController.swift */; };
+		D58D46942E97E5B500484E3F /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D466D2E97E5B500484E3F /* RecommendationService.swift */; };
+		D58D46952E97E5B500484E3F /* AddAnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D466F2E97E5B500484E3F /* AddAnimeView.swift */; };
+		D58D46962E97E5B500484E3F /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46702E97E5B500484E3F /* AddMovieView.swift */; };
+		D58D46972E97E5B500484E3F /* AddMovieViewLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46712E97E5B500484E3F /* AddMovieViewLegacy.swift */; };
+		D58D46982E97E5B500484E3F /* AIMovieGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46722E97E5B500484E3F /* AIMovieGeneratorView.swift */; };
+		D58D46992E97E5B500484E3F /* AnimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46732E97E5B500484E3F /* AnimeDetailView.swift */; };
+		D58D469A2E97E5B500484E3F /* AnimeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46742E97E5B500484E3F /* AnimeMainView.swift */; };
+		D58D469B2E97E5B500484E3F /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46752E97E5B500484E3F /* FavoritesView.swift */; };
+		D58D469C2E97E5B500484E3F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46762E97E5B500484E3F /* HomeView.swift */; };
+		D58D469D2E97E5B500484E3F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46772E97E5B500484E3F /* ImagePicker.swift */; };
+		D58D469E2E97E5B500484E3F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46782E97E5B500484E3F /* MainTabView.swift */; };
+		D58D469F2E97E5B500484E3F /* MovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46792E97E5B500484E3F /* MovieCardView.swift */; };
+		D58D46A02E97E5B500484E3F /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D467A2E97E5B500484E3F /* MovieDetailView.swift */; };
+		D58D46A12E97E5B500484E3F /* MovieQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D467B2E97E5B500484E3F /* MovieQuizView.swift */; };
+		D58D46A22E97E5B500484E3F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D467C2E97E5B500484E3F /* OnboardingView.swift */; };
+		D58D46A32E97E5B500484E3F /* RecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D467D2E97E5B500484E3F /* RecommendationsView.swift */; };
+		D58D46A42E97E5B500484E3F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D467E2E97E5B500484E3F /* SearchView.swift */; };
+		D58D46A52E97E5B500484E3F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D467F2E97E5B500484E3F /* SettingsView.swift */; };
+		D58D46A62E97E5B500484E3F /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46802E97E5B500484E3F /* WatchlistView.swift */; };
+		D58D46A72E97E5B500484E3F /* A0.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46822E97E5B500484E3F /* A0.swift */; };
+		D58D46A82E97E5B500484E3F /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46832E97E5B500484E3F /* AdManager.swift */; };
+		D58D46A92E97E5B500484E3F /* CineMindModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D58D46852E97E5B500484E3F /* CineMindModel.xcdatamodeld */; };
+		D58D46AA2E97E5B500484E3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46862E97E5B500484E3F /* ContentView.swift */; };
+		D58D46AB2E97E5B500484E3F /* HiddenFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46872E97E5B500484E3F /* HiddenFlixApp.swift */; };
+		D58D46AC2E97E5B500484E3F /* K1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D46892E97E5B500484E3F /* K1.swift */; };
+		D58D46AD2E97E5B500484E3F /* M1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D468A2E97E5B500484E3F /* M1.swift */; };
+		D58D46AE2E97E5B500484E3F /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D468B2E97E5B500484E3F /* UnityManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		716E7000E30ACF312E340EFD /* Pods-HiddenFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenFlix.release.xcconfig"; path = "Target Support Files/Pods-HiddenFlix/Pods-HiddenFlix.release.xcconfig"; sourceTree = "<group>"; };
+		C9070466D8A1CC10CB17C9F2 /* Pods-HiddenFlix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenFlix.debug.xcconfig"; path = "Target Support Files/Pods-HiddenFlix/Pods-HiddenFlix.debug.xcconfig"; sourceTree = "<group>"; };
+		D54773BC2E91AD73004D0CBA /* HiddenFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiddenFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58A86912E983DC0009A39D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D58D46672E97E5B500484E3F /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		D58D46682E97E5B500484E3F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D58D46692E97E5B500484E3F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		D58D466B2E97E5B500484E3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D58D466D2E97E5B500484E3F /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
+		D58D466F2E97E5B500484E3F /* AddAnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimeView.swift; sourceTree = "<group>"; };
+		D58D46702E97E5B500484E3F /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
+		D58D46712E97E5B500484E3F /* AddMovieViewLegacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewLegacy.swift; sourceTree = "<group>"; };
+		D58D46722E97E5B500484E3F /* AIMovieGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMovieGeneratorView.swift; sourceTree = "<group>"; };
+		D58D46732E97E5B500484E3F /* AnimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailView.swift; sourceTree = "<group>"; };
+		D58D46742E97E5B500484E3F /* AnimeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeMainView.swift; sourceTree = "<group>"; };
+		D58D46752E97E5B500484E3F /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		D58D46762E97E5B500484E3F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D58D46772E97E5B500484E3F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		D58D46782E97E5B500484E3F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D58D46792E97E5B500484E3F /* MovieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardView.swift; sourceTree = "<group>"; };
+		D58D467A2E97E5B500484E3F /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		D58D467B2E97E5B500484E3F /* MovieQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizView.swift; sourceTree = "<group>"; };
+		D58D467C2E97E5B500484E3F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		D58D467D2E97E5B500484E3F /* RecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsView.swift; sourceTree = "<group>"; };
+		D58D467E2E97E5B500484E3F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		D58D467F2E97E5B500484E3F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D58D46802E97E5B500484E3F /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		D58D46822E97E5B500484E3F /* A0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A0.swift; sourceTree = "<group>"; };
+		D58D46832E97E5B500484E3F /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		D58D46842E97E5B500484E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D58D46862E97E5B500484E3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D58D46872E97E5B500484E3F /* HiddenFlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenFlixApp.swift; sourceTree = "<group>"; };
+		D58D46882E97E5B500484E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58D46892E97E5B500484E3F /* K1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K1.swift; sourceTree = "<group>"; };
+		D58D468A2E97E5B500484E3F /* M1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M1.swift; sourceTree = "<group>"; };
+		D58D468B2E97E5B500484E3F /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
+		D58D468D2E97E5B500484E3F /* CineMindModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CineMindModel.xcdatamodel; sourceTree = "<group>"; };
+		F9E21DC82DDB2524DA806529 /* Pods_HiddenFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiddenFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D54773B92E91AD73004D0CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58D45F42E97E51400484E3F /* AdjustSdk in Frameworks */,
+				D58D45FB2E97E53B00484E3F /* FirebaseAnalyticsCore in Frameworks */,
+				D58D45F62E97E51400484E3F /* AdjustWebBridge in Frameworks */,
+				D58D45FD2E97E53B00484E3F /* FirebaseRemoteConfig in Frameworks */,
+				D58D45EF2E97E4F100484E3F /* FingerprintPro in Frameworks */,
+				D58D45F92E97E53B00484E3F /* FirebaseAnalytics in Frameworks */,
+				D58D45F22E97E51400484E3F /* AdjustGoogleOdm in Frameworks */,
+				06FEA5FCDC556F00966A41C6 /* Pods_HiddenFlix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D3ACCA6442122BE447BB7BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9070466D8A1CC10CB17C9F2 /* Pods-HiddenFlix.debug.xcconfig */,
+				716E7000E30ACF312E340EFD /* Pods-HiddenFlix.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D22F5AE7CAB490827AEF22E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9E21DC82DDB2524DA806529 /* Pods_HiddenFlix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D54773B32E91AD73004D0CBA = {
+			isa = PBXGroup;
+			children = (
+				D58D468C2E97E5B500484E3F /* HiddenFlix */,
+				D54773BD2E91AD73004D0CBA /* Products */,
+				0D3ACCA6442122BE447BB7BE /* Pods */,
+				D22F5AE7CAB490827AEF22E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D54773BD2E91AD73004D0CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D54773BC2E91AD73004D0CBA /* HiddenFlix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D58D466A2E97E5B500484E3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D58D46672E97E5B500484E3F /* Anime.swift */,
+				D58D46682E97E5B500484E3F /* Movie.swift */,
+				D58D46692E97E5B500484E3F /* PersistenceController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D58D466C2E97E5B500484E3F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D58D466B2E97E5B500484E3F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D58D466E2E97E5B500484E3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D58D466D2E97E5B500484E3F /* RecommendationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D58D46812E97E5B500484E3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D58D466F2E97E5B500484E3F /* AddAnimeView.swift */,
+				D58D46702E97E5B500484E3F /* AddMovieView.swift */,
+				D58D46712E97E5B500484E3F /* AddMovieViewLegacy.swift */,
+				D58D46722E97E5B500484E3F /* AIMovieGeneratorView.swift */,
+				D58D46732E97E5B500484E3F /* AnimeDetailView.swift */,
+				D58D46742E97E5B500484E3F /* AnimeMainView.swift */,
+				D58D46752E97E5B500484E3F /* FavoritesView.swift */,
+				D58D46762E97E5B500484E3F /* HomeView.swift */,
+				D58D46772E97E5B500484E3F /* ImagePicker.swift */,
+				D58D46782E97E5B500484E3F /* MainTabView.swift */,
+				D58D46792E97E5B500484E3F /* MovieCardView.swift */,
+				D58D467A2E97E5B500484E3F /* MovieDetailView.swift */,
+				D58D467B2E97E5B500484E3F /* MovieQuizView.swift */,
+				D58D467C2E97E5B500484E3F /* OnboardingView.swift */,
+				D58D467D2E97E5B500484E3F /* RecommendationsView.swift */,
+				D58D467E2E97E5B500484E3F /* SearchView.swift */,
+				D58D467F2E97E5B500484E3F /* SettingsView.swift */,
+				D58D46802E97E5B500484E3F /* WatchlistView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D58D468C2E97E5B500484E3F /* HiddenFlix */ = {
+			isa = PBXGroup;
+			children = (
+				D58D466A2E97E5B500484E3F /* Models */,
+				D58D466C2E97E5B500484E3F /* Preview Content */,
+				D58D466E2E97E5B500484E3F /* Services */,
+				D58D46812E97E5B500484E3F /* Views */,
+				D58D46822E97E5B500484E3F /* A0.swift */,
+				D58D46832E97E5B500484E3F /* AdManager.swift */,
+				D58D46842E97E5B500484E3F /* Assets.xcassets */,
+				D58D46852E97E5B500484E3F /* CineMindModel.xcdatamodeld */,
+				D58D46862E97E5B500484E3F /* ContentView.swift */,
+				D58D46872E97E5B500484E3F /* HiddenFlixApp.swift */,
+				D58D46882E97E5B500484E3F /* Info.plist */,
+				D58D46892E97E5B500484E3F /* K1.swift */,
+				D58A86912E983DC0009A39D4 /* GoogleService-Info.plist */,
+				D58D468A2E97E5B500484E3F /* M1.swift */,
+				D58D468B2E97E5B500484E3F /* UnityManager.swift */,
+			);
+			path = HiddenFlix;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D54773BB2E91AD73004D0CBA /* HiddenFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54773CA2E91AD75004D0CBA /* Build configuration list for PBXNativeTarget "HiddenFlix" */;
+			buildPhases = (
+				570768AD2469E912FA3A0833 /* [CP] Check Pods Manifest.lock */,
+				D54773B82E91AD73004D0CBA /* Sources */,
+				D54773B92E91AD73004D0CBA /* Frameworks */,
+				D54773BA2E91AD73004D0CBA /* Resources */,
+				862E3B6ED845D1D72E8A9C35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiddenFlix;
+			packageProductDependencies = (
+				D58D45EE2E97E4F100484E3F /* FingerprintPro */,
+				D58D45F12E97E51400484E3F /* AdjustGoogleOdm */,
+				D58D45F32E97E51400484E3F /* AdjustSdk */,
+				D58D45F52E97E51400484E3F /* AdjustWebBridge */,
+				D58D45F82E97E53B00484E3F /* FirebaseAnalytics */,
+				D58D45FA2E97E53B00484E3F /* FirebaseAnalyticsCore */,
+				D58D45FC2E97E53B00484E3F /* FirebaseRemoteConfig */,
+			);
+			productName = HiddenFlix;
+			productReference = D54773BC2E91AD73004D0CBA /* HiddenFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D54773B42E91AD73004D0CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D54773BB2E91AD73004D0CBA = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = D54773B72E91AD73004D0CBA /* Build configuration list for PBXProject "HiddenFlix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D54773B32E91AD73004D0CBA;
+			packageReferences = (
+				D58D45ED2E97E4F100484E3F /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */,
+				D58D45F02E97E51400484E3F /* XCRemoteSwiftPackageReference "ios_sdk" */,
+				D58D45F72E97E53B00484E3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D54773BD2E91AD73004D0CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D54773BB2E91AD73004D0CBA /* HiddenFlix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D54773BA2E91AD73004D0CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58D468E2E97E5B500484E3F /* Preview Assets.xcassets in Resources */,
+				D58D468F2E97E5B500484E3F /* Assets.xcassets in Resources */,
+				D58A86922E983DC0009A39D4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		570768AD2469E912FA3A0833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiddenFlix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862E3B6ED845D1D72E8A9C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiddenFlix/Pods-HiddenFlix-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiddenFlix/Pods-HiddenFlix-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiddenFlix/Pods-HiddenFlix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D54773B82E91AD73004D0CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58D46912E97E5B500484E3F /* Anime.swift in Sources */,
+				D58D46922E97E5B500484E3F /* Movie.swift in Sources */,
+				D58D46932E97E5B500484E3F /* PersistenceController.swift in Sources */,
+				D58D46942E97E5B500484E3F /* RecommendationService.swift in Sources */,
+				D58D46952E97E5B500484E3F /* AddAnimeView.swift in Sources */,
+				D58D46962E97E5B500484E3F /* AddMovieView.swift in Sources */,
+				D58D46972E97E5B500484E3F /* AddMovieViewLegacy.swift in Sources */,
+				D58D46982E97E5B500484E3F /* AIMovieGeneratorView.swift in Sources */,
+				D58D46992E97E5B500484E3F /* AnimeDetailView.swift in Sources */,
+				D58D469A2E97E5B500484E3F /* AnimeMainView.swift in Sources */,
+				D58D469B2E97E5B500484E3F /* FavoritesView.swift in Sources */,
+				D58D469C2E97E5B500484E3F /* HomeView.swift in Sources */,
+				D58D469D2E97E5B500484E3F /* ImagePicker.swift in Sources */,
+				D58D469E2E97E5B500484E3F /* MainTabView.swift in Sources */,
+				D58D469F2E97E5B500484E3F /* MovieCardView.swift in Sources */,
+				D58D46A02E97E5B500484E3F /* MovieDetailView.swift in Sources */,
+				D58D46A12E97E5B500484E3F /* MovieQuizView.swift in Sources */,
+				D58D46A22E97E5B500484E3F /* OnboardingView.swift in Sources */,
+				D58D46A32E97E5B500484E3F /* RecommendationsView.swift in Sources */,
+				D58D46A42E97E5B500484E3F /* SearchView.swift in Sources */,
+				D58D46A52E97E5B500484E3F /* SettingsView.swift in Sources */,
+				D58D46A62E97E5B500484E3F /* WatchlistView.swift in Sources */,
+				D58D46A72E97E5B500484E3F /* A0.swift in Sources */,
+				D58D46A82E97E5B500484E3F /* AdManager.swift in Sources */,
+				D58D46A92E97E5B500484E3F /* CineMindModel.xcdatamodeld in Sources */,
+				D58D46AA2E97E5B500484E3F /* ContentView.swift in Sources */,
+				D58D46AB2E97E5B500484E3F /* HiddenFlixApp.swift in Sources */,
+				D58D46AC2E97E5B500484E3F /* K1.swift in Sources */,
+				D58D46AD2E97E5B500484E3F /* M1.swift in Sources */,
+				D58D46AE2E97E5B500484E3F /* UnityManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D54773C82E91AD75004D0CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D54773C92E91AD75004D0CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D54773CB2E91AD75004D0CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9070466D8A1CC10CB17C9F2 /* Pods-HiddenFlix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"HiddenFlix/Preview Content\"";
+				DEVELOPMENT_TEAM = 4962LN2NZA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HiddenFlix/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "HiddenFlix needs access to your camera to let you take photos for movie posters.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "HiddenFlix needs access to your photo library to let you add movie posters to your collection.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This app uses your data to provide personalized ads that are more relevant to you. Your information will not be used for any other purposes.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shunew.hiddenflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D54773CC2E91AD75004D0CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716E7000E30ACF312E340EFD /* Pods-HiddenFlix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"HiddenFlix/Preview Content\"";
+				DEVELOPMENT_TEAM = 4962LN2NZA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HiddenFlix/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "HiddenFlix needs access to your camera to let you take photos for movie posters.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "HiddenFlix needs access to your photo library to let you add movie posters to your collection.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This app uses your data to provide personalized ads that are more relevant to you. Your information will not be used for any other purposes.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shunew.hiddenflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D54773B72E91AD73004D0CBA /* Build configuration list for PBXProject "HiddenFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54773C82E91AD75004D0CBA /* Debug */,
+				D54773C92E91AD75004D0CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54773CA2E91AD75004D0CBA /* Build configuration list for PBXNativeTarget "HiddenFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54773CB2E91AD75004D0CBA /* Debug */,
+				D54773CC2E91AD75004D0CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D58D45ED2E97E4F100484E3F /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fingerprintjs/fingerprintjs-pro-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+		D58D45F02E97E51400484E3F /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D58D45F72E97E53B00484E3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D58D45EE2E97E4F100484E3F /* FingerprintPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45ED2E97E4F100484E3F /* XCRemoteSwiftPackageReference "fingerprintjs-pro-ios" */;
+			productName = FingerprintPro;
+		};
+		D58D45F12E97E51400484E3F /* AdjustGoogleOdm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45F02E97E51400484E3F /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustGoogleOdm;
+		};
+		D58D45F32E97E51400484E3F /* AdjustSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45F02E97E51400484E3F /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustSdk;
+		};
+		D58D45F52E97E51400484E3F /* AdjustWebBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45F02E97E51400484E3F /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustWebBridge;
+		};
+		D58D45F82E97E53B00484E3F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45F72E97E53B00484E3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D58D45FA2E97E53B00484E3F /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45F72E97E53B00484E3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		D58D45FC2E97E53B00484E3F /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D58D45F72E97E53B00484E3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D58D46852E97E5B500484E3F /* CineMindModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D58D468D2E97E5B500484E3F /* CineMindModel.xcdatamodel */,
+			);
+			currentVersion = D58D468D2E97E5B500484E3F /* CineMindModel.xcdatamodel */;
+			path = CineMindModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D54773B42E91AD73004D0CBA /* Project object */;
+}
