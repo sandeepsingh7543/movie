@@ -1,0 +1,110 @@
+ 🎬 Movie Stream Watch — Apple App Store Review Information
+  
+  1. App Name
+  
+  Movie Stream Watch
+  
+  2. Subtitle (30 characters max)
+  
+  Track Your Movies & Series
+  
+  3. Bundle ID
+  
+  com.har.moviestreamwatch
+  
+  4. Version
+  
+  1.0 (Build 1)
+  
+  5. Category
+  
+  Primary: Entertainment
+  Secondary: Utilities
+  
+  6. Compatibility
+  
+  - Platform: iPhone only (TARGETED_DEVICE_FAMILY = 1)
+  - Minimum iOS: 18.2
+  - Language: Swift 5.0 / SwiftUI
+  - Frameworks: CoreData (local storage only)
+  
+  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  
+  7. Description (App Store)
+  
+  Short Description (Promotional Text — 170 chars):
+  
+  │ Your personal movie & web series tracker. Organize your watchlist, track progress, discover what to watch next — all in a beautiful cinematic dark interface.
+  
+  Full Description:
+  
+  │ Movie Stream Watch is your ultimate personal watchlist manager for movies and web series. Organize, track, and discover your entertainment — all in one beautifully designed app.
+  │ 
+  │ **KEY FEATURES:**
+  │ 
+  │ 🎬 **Watchlist Management** — Add movies and web series with poster, genre, rating, mood, watch status, notes, and external links.
+  │ 
+  │ 📺 **Series Tracking** — Track seasons and episodes with detailed progress for web series. Know exactly where you left off.
+  │ 
+  │ 🔍 **Smart Filters & Search** — Filter by content type (Movies/Series), watch status (Plan/Watching/Watched), sort by date, title, rating, or genre.
+  │ 
+  │ 🎲 **Discover Tab** — Can't decide what to watch? Use the Random Picker to get a surprise suggestion, or browse by mood (Action, Chill, Romantic, Focus).
+  │ 
+  │ ❤️ **Favorites** — Mark your favorite titles and access them quickly from the Home screen.
+  │ 
+  │ 📊 **Profile & Stats** — View your watching statistics including total movies, series, completed titles, episodes watched, total watch time, average rating, and completion rate.
+  │ 
+  │ 🏆 **Achievements** — Unlock badges like "Movie Buff", "Series Fan", "Marathon Runner", "Episode Hunter" and more as you build your collection.
+  │ 
+  │ 🖼️ **Custom Posters** — Add poster images from your photo library for a cinematic visual experience.
+  │ 
+  │ 🔗 **External Links** — Save streaming links for quick access and share them with friends.
+  │ 
+  │ 📝 **Notes** — Add personal notes and reviews for each title.
+  │ 
+  │ 🌙 **Dark Cinematic UI** — Stunning dark theme with gradient accents designed for movie lovers.
+  │ 
+  │ 💾 **Offline & Private** — All data is stored locally on your device using CoreData. No account required, no internet needed, no data collected.
+  │ 
+  │ **DISCLAIMER:** This app does NOT host or stream any movies or TV shows. It is designed solely to help users manage and track their personal watchlist.
+  
+  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  
+  8. Keywords (100 characters max)
+  
+  movie,tracker,watchlist,series,tv,shows,watch,list,progress,rating,discover,mood,favorites,offline
+  
+  9. Privacy Policy URL
+  
+  ⚠️ Required — You need to provide a privacy policy URL. Since the app collects NO data and stores everything locally, you can create a simple one. Chahiye to main bana deta hoon.
+  
+  10. Privacy — Data Collection
+  
+  App Store Connect mein select karo:
+  
+  - Data Collection: ❌ No (This app does not collect any data)
+  - No tracking, no analytics, no third-party SDKs
+  
+  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  
+  11. Age Rating
+  
+  - Rating: 4+ (No objectionable content)
+  - No violence, no adult content, no gambling, no horror
+  
+  12. Copyright
+  
+  © 2026 [Your Name/Company]
+  
+  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  
+  13. Review Notes (for Apple Reviewer)
+  
+  │ This is a personal watchlist management app. Users can manually add movies and web series they want to track, along with poster images, ratings, genres, and watch progress.
+  │ 
+  │ The app does NOT stream, download, or host any copyrighted content. It does NOT connect to any external movie database or API. All data is entered manually by the user and stored locally on-device
+  using CoreData.
+  │ 
+  │ No login or account is required. The app works fully offline.
+  │ 
+  │ To test: Simply tap the "+" button on the Watchlist tab to add a movie or series with a title, genre, and rating.
